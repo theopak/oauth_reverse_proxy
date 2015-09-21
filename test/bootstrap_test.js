@@ -82,6 +82,11 @@ describe('bootstrapping', function() {
     });
   });
 
+  // Temp
+  it ('should be called such that Travis-CI recognized build failures', function(done) {
+    false.should.be.true;
+  });
+
   // Test that the proxy starts and loads all the keys created in the before function.
   it ('should start cleanly', function(done) {
     oauth_reverse_proxy.init('./test/config.d', function(err, proxies) {
